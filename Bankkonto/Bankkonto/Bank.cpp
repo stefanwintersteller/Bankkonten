@@ -73,7 +73,7 @@ void Bank::manipulate()
 			switch (temp)
 			{
 			case 1: kont->deposite(); break;
-			case 2: kont->withdraw(); break;
+			case 2: kont->callwithdraw(); break;
 			case 3: cout << "Ihr Kontostand betraegt:" << kont->getBalance() << "Euro\n"; break;
 			case 4: for (int a : kont->getHistory()) cout << a << "Euro\n"; cout << "Kontostand:" << kont->getBalance() << "Euro\n";  break;
 			case 99: return;

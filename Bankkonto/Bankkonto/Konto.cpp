@@ -26,6 +26,11 @@ void Konto::withdraw()
 		cout << "Nur positive Betraege groesser 0 moeglich\n";
 }
 
+void Konto::callwithdraw()
+{
+	withdraw();
+}
+
 Konto::Konto(int id)
 {
 	this->id = id;

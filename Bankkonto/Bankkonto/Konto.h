@@ -13,9 +13,11 @@ private:
 	int balance=0;
 	vector <int> history;
 
+protected:
+	void withdraw();
 
 public:
-	void withdraw();
+	void callwithdraw();
 	Konto(int id);
 	void deposite();
 	int getBalance();
